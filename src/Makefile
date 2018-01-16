@@ -42,7 +42,7 @@ KERNEL_ADDR = 0x1000
 #
 # -m32:
 # Compile for 32-bit CPUs
-CCOPTS = -Wall -g -c -fomit-frame-pointer -O2 -fno-builtin -m32 -DKERNEL_ADDR=$(KERNEL_ADDR)
+CCOPTS = -Wall -Wextra -Werror -g -c -fomit-frame-pointer -O2 -fno-builtin -m32 -DKERNEL_ADDR=$(KERNEL_ADDR)
 
 # Linker flags
 #
